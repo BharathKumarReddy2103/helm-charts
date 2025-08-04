@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-lb
+  labels:
+    purpose: service-lb-demo
+spec:
+  type: LoadBalancer
+  selector:
+    purpose: deployment-demo
+    project: roboshop
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80 # service port
+      targetPort: {{ .Values.service.targetPort }} # container port
