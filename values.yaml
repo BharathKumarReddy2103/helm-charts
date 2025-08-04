@@ -1,5 +1,5 @@
 deployment:
   replicas: 4
-  imageVersion: stable-otel
+  imageVersion: stable-perl
 service:
   targetPort: 80
