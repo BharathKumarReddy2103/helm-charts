@@ -3,4 +3,3 @@ deployment:
   imageVersion: stable-perl
 service:
   targetPort: 80
-  
