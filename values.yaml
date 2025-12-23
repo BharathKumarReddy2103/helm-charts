@@ -3,3 +3,4 @@ deployment:
   imageVersion: stable-otel
 service:
   targetPort: 80
+  
